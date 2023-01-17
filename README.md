@@ -17,6 +17,16 @@ but it works.
 
 [Microsoft Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
+## Installation
+- Install NPM. Consider a version manager for [linux](https://github.com/nvm-sh/nvm) or
+[windows](https://github.com/coreybutler/nvm-windows).
+- Install project prerequisites with `npm install`
+- Install `esbuild` with `npm i --save-dev esbuild` (see [here](https://code.visualstudio.com/api/working-with-extensions/bundling-extension))
+- Install `vsce` with `npm install -g @vscode/vsce` (see
+  [here](https://code.visualstudio.com/api/working-with-extensions/publishing-extension))
+- Run `vsce package` to create a `vsix` file.
+- Add the extension to VSCode using the `vsix` package.
+
 ## Known Issues
 
 - Sending code to the terminal is slow and has no feedback. IPython interprets
